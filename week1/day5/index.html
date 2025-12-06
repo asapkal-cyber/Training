@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 5 - DOM Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Day 5: DOM Mini Projects</h1>
+    <section>
+      <h2>Quiz App</h2>
+      <p id="question"></p>
+      <div id="options"></div>
+      <button id="next">Next</button>
+      <p id="score"></p>
+    </section>
+    <section>
+      <h2>Accordion</h2>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">What is JavaScript?</button>
+        <div class="accordion-content">JavaScript is a programming language used for web development.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">What is DOM?</button>
+        <div class="accordion-content">DOM is a programming interface for HTML documents.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">What is CSS?</button>
+        <div class="accordion-content">CSS styles the layout and appearance of web pages.</div>
+      </div>
+    </section>
+    <section>
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <img id="carousel-img" src="https://picsum.photos/400/200?1">
+        <div class="carousel-buttons">
+          <button id="prev">Prev</button>
+          <button id="next-img">Next</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Real-Time Search</h2>
+      <input type="text" id="search" placeholder="Search skill...">
+      <ul id="list">
+        <li>React</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>MongoDB</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 4 - JS DOM Core</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Day 4: JS Arrays + DOM</h1>
+    <section>
+      <h2>Counter App</h2>
+      <p id="count">0</p>
+      <div class="btn-group">
+        <button id="dec">- Decrease</button>
+        <button id="inc">+ Increase</button>
+      </div>
+    </section>
+    <section>
+      <h2>Tab Switcher</h2>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+      </div>
+
+      <div class="tab-content-wrapper">
+        <div class="tab-content active" id="tab1">This is Tab 1 Content</div>
+        <div class="tab-content" id="tab2">This is Tab 2 Content</div>
+        <div class="tab-content" id="tab3">This is Tab 3 Content</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

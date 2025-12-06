@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #020617;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+section {
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 30px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+section:first-of-type {
+  text-align: center;
+}
+
+#count {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 1.5rem 0 2rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.35);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.45);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.tabs {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: #e5e7eb;
+  color: #020617;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #020617, #1e293b);
+  color: white;
+}
+
+.tab-content-wrapper {
+  margin-top: 1rem;
+}
+
+.tab-content {
+  display: none;
+  background: white;
+  border-radius: 12px;
+  padding: 1.2rem;
+  border: 1px solid #e5e7eb;
+  line-height: 1.7;
+  animation: slideFade 0.25s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.console-info {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #count {
+    font-size: 2.6rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}

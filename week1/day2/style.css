@@ -1,0 +1,30 @@
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+}
+
+body.dark {
+  --bg: #111827;
+  --text: #f9fafb;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.2s, color 0.2s;
+}
+
+.grid {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.grid img {
+  width: 100%;
+  display: block;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
